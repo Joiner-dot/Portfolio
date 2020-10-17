@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Sansita";
+    src: url("../fonts/SansitaSwashed-VariableFont_wght.ttf");
+}
+
+
+html {
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+header {
+    float: left;
+    width: 96%;
+    padding: 2%;
+    background-color: #d4d4d4;
+    border-bottom: 2px solid silver;
+}
+
+header #logo {
+    font-family: Sansita, sans-serif;
+    width: 30%;
+    float: left;
+    font-size: 2vmax;
+
+}
+
+header #about {
+    width: 50%;
+    float: right;
+    font-size: 1.7vmax;
+}
+
+header #about a {
+    color: #497DDD;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    margin-left: 1.2em;
+}
+
+header #about a:hover {
+    color: #114182;
+    transition: 1s;
+}
+
+#table {
+    width: 100%;
+    height: 45vmax;
+    background-color: #161936;
+}
+
+#table #news {
+    position: absolute;
+    width: 20%;
+    height: 10vmax;
+    background-color: #497DDD;
+    margin-left: 10%;
+    color: white;
+    margin-top: 10%;
+}
+
+#table #aboutus {
+    position: absolute;
+    width: 20%;
+    height: 10vmax;
+    background-color: #497DDD;
+    margin-left: 40%;
+    margin-top: 10%;
+    color: white;
+}
+
+
+#table #interview {
+    position: absolute;
+    width: 20%;
+    height: 10vmax;
+    background-color: #497DDD;
+    margin-left: 70%;
+    color: white;
+    margin-top: 10%;
+}
+
+#table #contacts {
+    position: absolute;
+    width: 20%;
+    height: 10vmax;
+    background-color: #497DDD;
+    margin-left: 40%;
+    color: white;
+    margin-top: 30%;
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+h2 {
+    font-size: 2vmax;
+    margin-top: 3.4vmax;
+    text-align: center;
+}
+
+footer {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 9.4%;
+    background-color: #c9c9c9;
+    border: 2px solid silver;
+}
+
+#rights {
+    position: absolute;
+    font-size: 1.5vmax;
+    margin-left: 2vmax;
+    font-family: "Times New Roman", sans-serif;
+}
+
+
+#it{
+    margin-top: 2vmax;
+}
+
+

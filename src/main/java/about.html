@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aboutus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+
+
+</head>
+<body>
+<header>
+    <div id="logo">
+        Joiner-dot
+    </div>
+    <nav id="about">
+        <a href="#">О нас</a>
+        <a href="index.html">Главная</a>
+        <a href="#">Новости</a>
+        <a href="#">Интервью</a>
+        <a href="#">Контакты</a>
+    </nav>
+</header>
+<main>
+   <div id="aboutproject">
+           <aside><h4>Тотемное животное</h4>
+               <pre>
+   /\_/\
+   _(o o)_
+)) ( _/^\_ )
+(( )  ^  (
+)) (         )
+(( (   ||  ||   )
+ (((   ||  ||   )
+  \\_=||__||=_/
+        </pre>
+           </aside>
+           <h2>ФИО: Кузьмин Егор Юрьевич<br/><br/>Место учёбы: Университет ИТМО<br/><br/>Языки: Русский, English</h2>
+           <p id="me">Студент третьего курса Университета ИТМО факультета Информационных технологий и программирования</p>
+           <br/><br/>
+   </div>
+    <section>
+        <h2>Успехи:</h2>
+        <ul>
+            <li>Написал чат-бота на JAVA для Telegram</li>
+            <dl>
+                <dt>JAVA</dt>
+                <dd>Cтрого типизированный объектно-ориентированный язык программирования общего назначения,
+                    разработанный компанией Sun Microsystems.
+                    Разработка ведётся сообществом, организованным через Java Community Process, язык и основные
+                    реализующие его технологии распространяются по лицензии GPL
+                </dd>
+            </dl>
+        </ul>
+        <br/><br/>
+        <time datetime="07.09.2020">07.09.2020</time>
+    </section>
+    <section class="class1">
+        <h2 class="class2">Код</h2>
+        <div id="codeformgit">
+        <p><code>#!/bin/bash<br/>
+            #1<br/>
+            rm -r ~/test<br/>
+            <br/>
+            cd ~<br/>
+            mkdir test<br/>
+            read<br/>
+            <br/>
+            <strong>#2<br/>
+                directory=0<br/>
+                files=0<br/>
+                cd test<br/>
+                for File in /etc/*; do<br/>
+                if [[ -d "$File" ]]; then<br/>
+                echo "$File/" >> list<br/>
+                let directory=$directory+1<br/>
+                else<br/>
+                echo "$File" >> list<br/>
+                fi<br/>
+                done<br/>
+                <br/>
+                for File in /etc/.*; do<br/>
+                if [[ -d "$File" ]]; then<br/>
+                echo "$File/" >> list<br/>
+                else<br/>
+                let files=$files+1<br/>
+                echo "$File" >> list<br/>
+                fi<br/>
+                done<br/>
+                read<br/></strong>
+            #3<br/>
+            <br/>
+            echo "Files = " $files >> list<br/>
+            echo "Directories = " $directory >> list<br/>
+            read<br/>
+            <br/>
+            #4<br/>
+            mkdir links<br/>
+            read<br/>
+            <br/>
+            #5<br/>
+            ln ~/test/list ~/test/links/list_hlink<br/>
+            read<br/>
+            <br/>
+        </code> <br/><br/> </div>
+        </p>
+    </section>
+
+    <section>
+        <h2>Цитата: </h2>
+        <p><em>Насколько прекраснее была бы жизнь, если бы все мы были такими, какими нас видят наши коты и собаки</em>
+            <br/><br/>
+            <time datetime="07.09.2020">07.09.2020</time>
+        </p>
+
+    </section>
+</main>
+<footer>
+    <div id="rights">
+        <p id="it">Все права защищены правообладателем</p>
+    </div>
+</footer>
+</body>
+</html>
