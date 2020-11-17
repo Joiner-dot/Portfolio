@@ -5,6 +5,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/mainpage.js"></script>
+    <script src="js/lab5.js"></script>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 </head>
@@ -29,11 +30,25 @@
         <div id="aboutus" onclick="abouts()">
             <h2>О нас</h2>
         </div>
-        <div id="interview">
+        <div id="interview" onclick="count()">
             <h2>Интервью</h2>
         </div>
         <div id="contacts">
             <h2>Контакты</h2>
+        </div>
+    </div>
+    <div id="info">
+        <div id="info-content">
+            <h2>Contact info</h2>
+            <p>Email:ijijiij@mail.ru</p>
+            <h2>Photos</h2>
+            <ul id="do" style="width: 100%; height: 100%; padding: 0">
+                <div id="mainphotodiv">
+                    <img id="mainphoto" src="images/galery1.jpg" style="width: 100%; height: 100%;">
+                </div>
+                <img class="sub" src="images/galery1.jpg" style="width: 30%; height: 30%">
+                <img class="sub" src="images/galery2.jpg" style="width: 30%; height: 30%">
+            </ul>
         </div>
     </div>
 </main>

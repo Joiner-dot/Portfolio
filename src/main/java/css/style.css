@@ -113,7 +113,7 @@ footer {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 9.4%;
+    height: 8.3%;
     background-color: #c9c9c9;
     border: 2px solid silver;
 }
@@ -130,4 +130,32 @@ footer {
     margin-top: 2vmax;
 }
 
+#info{
+    display: block;
+    visibility: hidden;
+    transition: .55s opacity, .55s visibility;
+    opacity: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color: rgba(0,0,0,0.4);
+}
 
+#info-content{
+    text-align: center;
+    margin: 6vmax auto auto;
+    width: 20%;
+    padding: 3vmax;
+    background-color: #fefefe;
+}
+
+p{
+    font-size: 1vmax;
+}
+
+#mainphotodiv{
+    height: 12vw;
+    padding: 1vmax;
+}
