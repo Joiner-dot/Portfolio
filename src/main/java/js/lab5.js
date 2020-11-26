@@ -24,7 +24,7 @@ function max(arr) {
     if (arr.length % 2 === 0)
         median = (arr[arr.length / 2] + arr[arr.length / 2 - 1]) / 2;
     else
-        median = arr[arr.length / 2];
+        median = arr[Math.round(arr.length / 2)];
 
     console.log(max, min, median)
 }
@@ -103,5 +103,5 @@ function count() {
 }
 
 arr = generatearr(arr)
-max(arr)
 sortbyQuickSort(arr)
+max(arr)

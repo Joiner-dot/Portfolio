@@ -44,6 +44,7 @@ header #about a {
     text-decoration: none;
     border-bottom: 1px dashed;
     margin-left: 1.2em;
+    transition: 1s;
 }
 
 header #about a:hover {
@@ -145,9 +146,9 @@ footer {
 
 #info-content{
     text-align: center;
-    margin: 6vmax auto auto;
+    margin: 7vmax auto auto;
     width: 20%;
-    padding: 3vmax;
+    padding: 1vmax;
     background-color: #fefefe;
 }
 
