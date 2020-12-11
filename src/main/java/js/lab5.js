@@ -1,5 +1,4 @@
 let arr = []
-
 function generatearr(arr) {
     for (let i = 0; i < 1100; i++) {
         arr.push(Math.random() * 1100)
@@ -8,8 +7,8 @@ function generatearr(arr) {
 }
 
 function max(arr) {
-    let max = -100
-    let min = 100
+    let max = -1000000
+    let min = 1000000
     let median = 0
     for (let i = 0; i < arr.length; i++) {
         if (max < arr[i]) {
@@ -36,7 +35,7 @@ function swap(items, firstIndex, secondIndex) {
 }
 
 function partition(items, left, right) {
-    var pivot = items[Math.floor((right + left) / 2)],
+    let pivot = items[Math.floor((right + left) / 2)],
         i = left,
         j = right;
     while (i <= j) {

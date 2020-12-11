@@ -1,0 +1,36 @@
+
+body {
+
+    background-color: aquamarine;
+}
+
+.message {
+    margin-top: 1em;
+    display: inline-block;
+    background-color: #497DDD;
+    line-height: 1.5em;
+    padding: 0.4em;
+    border-radius: 10px;
+    transition: .55s visibility;
+}
+
+input {
+
+    height: 2.6vmax;
+    width: 20%;
+    border-radius: 10px;
+}
+
+button {
+    color: black;
+    height: 2.6vmax;
+    background-color: #fefefe;
+    transition: .55s color, .55s background-color;
+    border-radius: 10px;
+}
+
+button:hover {
+
+    background-color: black;
+    color: white;
+}

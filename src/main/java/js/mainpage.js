@@ -1,46 +1,17 @@
 function size() {
-    document.getElementById('news').onmouseover = function () {
-        this.style.transform = "scale(1.2)"
-        this.style.transition = "1s"
-        this.style.cursor = "pointer"
-    }
+    var doe = document.getElementById("do")
 
-    document.getElementById('news').onmouseleave = function () {
-        this.style.transform = "scale(1)"
-        this.style.transition = "1s"
-    }
-
-    document.getElementById('aboutus').onmouseover = function () {
-        this.style.transform = "scale(1.2)"
-        this.style.transition = "1s"
-        this.style.cursor = "pointer"
-    }
-
-    document.getElementById('aboutus').onmouseleave = function () {
-        this.style.transform = "scale(1)"
-        this.style.transition = "1s"
-    }
-
-    document.getElementById('interview').onmouseover = function () {
-        this.style.transform = "scale(1.2)"
-        this.style.transition = "1s"
-        this.style.cursor = "pointer"
-    }
-
-    document.getElementById('interview').onmouseleave = function () {
-        this.style.transform = "scale(1)"
-        this.style.transition = "1s"
-    }
-
-    document.getElementById('contacts').onmouseover = function () {
-        this.style.transform = "scale(1.2)"
-        this.style.transition = "1s"
-        this.style.cursor = "pointer"
-    }
-
-    document.getElementById('contacts').onmouseleave = function () {
-        this.style.transform = "scale(1)"
-        this.style.transition = "1s"
+    window.onmouseover = function (event) {
+        switch (event.target.closest('div')) {
+            case (document.getElementById('contacts')):
+            case (document.getElementById('interview')):
+            case (document.getElementById('aboutus')):
+            case (document.getElementById('news')):
+                event.target.closest('div').style.transform = "scale(1.2)"
+                event.target.closest('div').style.transition = "1s"
+                event.target.closest('div').style.cursor = "pointer"
+                break
+        }
     }
 
     document.getElementById("contacts").onclick = function () {
@@ -54,9 +25,8 @@ function size() {
             document.getElementById("info").style.opacity = "0"
         }
     }
-    var doe = document.getElementById("do")
+
     doe.onclick = function (event) {
-        console.log(event.target.closest('img'))
         if (event.target.closest('img')) {
             showThumbnail(event.target.closest('img').src)
         }
@@ -66,6 +36,11 @@ function size() {
         document.getElementById("mainphoto").src = href;
     }
 
+}
+
+function onleave(id) {
+    document.getElementById(id).style.transform = "scale(1)"
+    document.getElementById(id).style.transition = "1s"
 }
 
 function abouts() {
